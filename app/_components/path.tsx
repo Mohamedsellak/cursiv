@@ -127,16 +127,20 @@ export default function Path() {
               const styles = iconStyles[slide.icon as keyof typeof iconStyles]
               return (
                 <SwiperSlide key={slide.id}>
-                  <div className="group bg-gradient-to-b from-white to-gray-50/50 rounded-xl p-4 sm:p-6 
-                    shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 h-full
-                    hover:-translate-y-1 cursor-pointer">
-                    <div className={`${styles.bg} w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center 
-                      justify-center mb-4 sm:mb-5 group-hover:scale-110 transition-transform duration-300`}>
+                  <div className="group bg-gradient-to-b from-white to-gray-50/50 rounded-xl p-6 sm:p-8 
+                    shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:shadow-xl transition-all duration-300 
+                    border border-gray-100/80 hover:border-gray-200/80 backdrop-blur-sm
+                    hover:-translate-y-1 cursor-pointer min-h-[280px] sm:min-h-[320px]
+                    before:absolute before:inset-0 before:rounded-xl before:p-[1px] 
+                    before:bg-gradient-to-b before:from-gray-100 before:to-white/5 
+                    before:pointer-events-none relative overflow-hidden">
+                    <div className={`${styles.bg} w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center 
+                      justify-center mb-5 sm:mb-6 group-hover:scale-110 transition-transform duration-300 relative`}>
                       {getIcon(slide.icon)}
                     </div>
-                    <h3 className="font-semibold text-lg sm:text-xl mb-3 group-hover:text-gray-900 
-                      transition-colors duration-300">{slide.title}</h3>
-                    <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">{slide.description}</p>
+                    <h3 className="font-semibold text-lg sm:text-xl mb-4 group-hover:text-gray-900 
+                      transition-colors duration-300 relative">{slide.title}</h3>
+                    <p className="text-gray-600 text-xs sm:text-sm leading-relaxed relative">{slide.description}</p>
                   </div>
                 </SwiperSlide>
               )

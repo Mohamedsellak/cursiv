@@ -9,7 +9,7 @@ export default function Hero() {
         <div 
           className="relative w-full rounded-[16px] border border-[#D3D3D3] pb-[36px] pt-4 lg:pb-[80px]" 
           style={{ 
-            backgroundImage: "url('/assets/images/bg.4f533dc5.png')",
+            backgroundImage: "url('/assets/images/bg.hero.png')",
             backgroundSize: "cover",
             backgroundPosition: "center center"
           }}
@@ -22,7 +22,7 @@ export default function Hero() {
                   alt="Coursiv logo"
                   width={85}
                   height={25}
-                  src="/assets/images/logo.svg"
+                  src="/logo.svg"
                   priority
                 />
                 <Link className="text-base font-normal leading-[24px]" href="/en">
@@ -58,7 +58,7 @@ export default function Hero() {
                   alt="Coursiv logo"
                   width={85}
                   height={25}
-                  src="/assets/logo.svg"
+                  src="/logo.svg"
                   priority
                 />
                 <button className="absolute right-0" aria-label="Open sidebar">
