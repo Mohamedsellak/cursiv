@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function metrics() {
@@ -29,7 +30,7 @@ export default function metrics() {
         </div>
       </div>
       <div className="mt-2">
-        <img 
+        <Image 
           src="/assets/images/metrics-map.png" 
           className="h-auto w-full" 
           alt="Metrics Map"

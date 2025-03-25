@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function Certificate() {
@@ -17,7 +18,7 @@ export default function Certificate() {
               Earn a certificate that proves your AI skills
             </h2>
             <p className="mt-2 hidden max-w-[638px] text-[16px] leading-[24px] tracking-[-0.2px] opacity-80 lg:mt-6 lg:block">
-              Complete your AI course and receive a certificate to highlight your expertise. It's proof of the valuable skills you've gained to tackle challenges, achieve your goals, and move forward in your career or personal projects.
+              Complete your AI course and receive a certificate to highlight your expertise. It&apos;s proof of the valuable skills you&apos;ve gained to tackle challenges, achieve your goals, and move forward in your career or personal projects.
             </p>
             <p className="mt-2 max-w-[638px] text-center text-[16px] leading-[24px] tracking-[-0.2px] opacity-80 lg:hidden">
               Complete your AI course and receive a certificate to highlight your expertise.
@@ -30,7 +31,7 @@ export default function Certificate() {
             </button>
           </div>
           <div className="order-1 flex w-full justify-center lg:order-2 lg:justify-end">
-            <img 
+            <Image
               src="/assets/images/certificate.png" 
               alt="Certificate of completion an AI course by Coursiv" 
               className="h-auto w-full max-w-[495px]"

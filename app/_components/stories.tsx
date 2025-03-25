@@ -2,6 +2,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import Image from 'next/image';
 
 export default function Stories() {
   return (
@@ -22,7 +23,7 @@ export default function Stories() {
           >
             <SwiperSlide>
               <div className="relative mt-8 flex flex-col rounded-[16px] border border-[#D3D3D3] p-10">
-                <img 
+                <Image 
                   alt="Shahe K."
                   src="/assets/images/avatar.png"
                   width={64}
@@ -37,7 +38,7 @@ export default function Stories() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="relative mt-8 flex flex-col rounded-[16px] border border-[#D3D3D3] p-10">
-                <img 
+                <Image 
                   alt="Regina Brown"
                   src="/assets/images/avatar2.png"
                   width={64}
@@ -52,7 +53,7 @@ export default function Stories() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="relative mt-8 flex flex-col rounded-[16px] border border-[#D3D3D3] p-10">
-                <img 
+                <Image 
                   alt="Corey Rein"
                   src="/assets/images/avatar3.png"
                   width={64}
@@ -60,7 +61,7 @@ export default function Stories() {
                   className="absolute -top-8 left-[70px] -translate-x-1/2 transform rounded-full"
                 />
                 <p className="mt-6 text-[18px] leading-[26px] tracking-[-0.2px]">
-                  I gained valuable insights and practical skills that I can apply in my own&nbsp;work. The course promotes interactive learning, enabling you to practice what you've learned through hands-on activities.
+                  I gained valuable insights and practical skills that I can apply in my own&nbsp;work. The course promotes interactive learning, enabling you to practice what you&apos;ve learned through hands-on activities.
                 </p>
                 <p className="mt-4 text-[18px] font-medium leading-[26px] tracking-[-0.2px]">Corey Rein</p>
               </div>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import { AiFillStar } from 'react-icons/ai'
 
@@ -23,7 +24,7 @@ export default function Trustpilot() {
         </div>
       </div>
       <div className="order-1 flex w-full justify-center lg:order-2 lg:justify-end">
-        <img 
+        <Image 
           alt="Portraits of people learning AI with Coursiv"
           loading="lazy"
           width="530"

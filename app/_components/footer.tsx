@@ -3,13 +3,14 @@ import { FaHome, FaBlog, FaHeadset } from 'react-icons/fa'
 import { IoMdLock } from 'react-icons/io'
 import { MdPrivacyTip, MdSubscriptions } from 'react-icons/md'
 import { HiDocumentText } from 'react-icons/hi'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
     <footer className="flex w-full max-w-[1280px] flex-col items-center justify-center" id="footer">
       <div className="flex w-full flex-col gap-[12px] px-4 pt-[36px] lg:flex-row lg:items-start lg:justify-between">
         <div>
-          <img 
+          <Image 
             alt="Coursiv logo" 
             loading="lazy" 
             width="85" 
@@ -23,7 +24,7 @@ export default function Footer() {
         <div className="flex justify-center lg:justify-end">
           <div className="flex items-start gap-4 sm:gap-8">
             <a href="https://apps.apple.com/kz/app/coursiv/id6478281150" target="_blank" rel="noopener noreferrer">
-              <img 
+              <Image 
                 alt="download coursiv from app store" 
                 loading="lazy" 
                 width="136" 
@@ -36,7 +37,7 @@ export default function Footer() {
               />
             </a>
             <a href="https://play.google.com/store/apps/details?id=io.zimran.coursiv" target="_blank" rel="noopener noreferrer">
-              <img 
+              <Image 
                 alt="download coursiv from google play" 
                 loading="lazy" 
                 width="136" 

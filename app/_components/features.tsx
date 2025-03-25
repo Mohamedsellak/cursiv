@@ -109,7 +109,9 @@ const Features: React.FC = () => {
           {[1, 2, 3].map((step, index) => (
             <div 
               key={step} 
-              ref={el => stepsRef.current[index] = el}
+              ref={(el: HTMLDivElement | null) => {
+                stepsRef.current[index] = el;
+              }}
               className="w-full"
             >
               <div 

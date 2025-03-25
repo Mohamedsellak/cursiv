@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function Benefits() {
   return (
@@ -75,7 +76,7 @@ export default function Benefits() {
         </div>
       </div>
       <div className="order-1 w-full lg:order-2">
-        <img 
+        <Image 
           alt="Screenshot of Coursiv app for mobile" 
           loading="lazy" 
           width="443" 
@@ -84,7 +85,6 @@ export default function Benefits() {
           data-nimg="1" 
           className="h-auto min-h-[360px] w-full max-w-[443px] md:mx-auto" 
           style={{ color: 'transparent' }} 
-          srcSet="/assets/images/phone.png" 
           src="/assets/images/phone.png"
         />
       </div>

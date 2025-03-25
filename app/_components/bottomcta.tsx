@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function BottomCta() {
@@ -27,7 +28,7 @@ export default function BottomCta() {
             </button>
           </div>
           <div className="order-1 mt-4 flex w-full justify-center lg:order-2 lg:mt-0 lg:mr-24 lg:justify-end">
-            <img 
+            <Image 
               src="/assets/images/phone-screen.png" 
               alt="Sample Coursiv lerning path in-app screenshot" 
               className="h-auto w-full max-w-[313px]"

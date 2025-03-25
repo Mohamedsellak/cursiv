@@ -2,6 +2,7 @@
 
 import React, { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import type { Swiper as SwiperCore } from 'swiper'
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs'
 import { RiMoneyDollarCircleLine, RiBuilding2Line, RiMegaphoneLine, RiCheckboxCircleLine, RiFileTextLine, RiHandCoinLine } from 'react-icons/ri'
 import 'swiper/css'
@@ -71,7 +72,7 @@ const slides = [
 ]
 
 export default function Path() {
-  const swiperRef = useRef<any>();
+  const swiperRef = useRef<SwiperCore | null>(null);
 
   return (
     <div className="w-full py-8 sm:py-10 md:py-20">

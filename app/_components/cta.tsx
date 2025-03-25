@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function CTA() {
@@ -26,7 +27,7 @@ export default function CTA() {
           </button>
         </div>
         <div className="order-1 flex w-full justify-center lg:order-2 lg:justify-end">
-          <img src="/assets/images/cta.png" alt="CTA" className="h-auto w-full max-w-[344px]" />
+          <Image src="/assets/images/cta.png" alt="CTA" className="h-auto w-full max-w-[344px]" />
         </div>
       </div>
     </div>
